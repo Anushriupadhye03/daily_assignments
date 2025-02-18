@@ -1,2 +1,2 @@
-# Day1_assignment
+# daily_assignments
 assignment problems and code
