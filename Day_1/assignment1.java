@@ -208,3 +208,164 @@ class ReverseString{
 
    }
  } */
+
+
+// Question 14
+
+/* class Fibonacci {
+public static void main(String args[]){
+
+   int first = 0, second = 1, next;
+
+  System.out.print(first + " "+ second + " ");
+  
+  for( int i = 2; i < 10; i++) {
+  next = first + second;
+  System.out.print(next + " ");
+  first = second;
+  second = next;
+   
+  }
+
+}
+} */
+
+
+//Question 15
+
+/* import java.util.Scanner;
+
+class Factorial{
+public static void main(String args[]){
+  
+  Scanner scanner = new Scanner(System.in);
+  
+  System.out.print("enter a number : ");
+  int num = scanner.nextInt();
+
+  int fact = 1;
+  for (int i = 1; i <= num; i++){
+  fact *= i;
+
+  }
+  System.out.println("Factorial of " + num + " is: " +  fact );
+ }
+  
+ }*/
+
+
+// Question 16
+
+/* import java.util.Scanner;
+
+class PrimeNum{
+public static void main(String args[]){
+
+   Scanner scanner = new Scanner(System.in);
+
+   System.out.print("enter a num : ");
+   int num = scanner.nextInt();
+
+   boolean isPrime = true; //assume that num is prime
+
+  if (num <= 1) {
+   isPrime = false;
+  } else{
+     for(int i = 2; i < num; i++) {
+       if(num % i == 0){
+          isPrime = false;
+            break;
+       }
+     }
+   }
+     if (isPrime) {
+
+         System.out.println(num + " is a prime number");
+      } else {
+         System.out.println(num + " is not a prime number");
+      }
+
+ }
+} */
+
+
+//Question 17
+
+/* import java.util.Scanner;
+
+class NaturalNumber{
+  public static void main(String args[]){
+
+   Scanner scanner = new Scanner(System.in);
+
+   System.out.print("enter a number : ");
+   int num = scanner.nextInt();
+
+   for(int i = 1; i <= num; i++){
+   System.out.print(i + " ");
+   }
+ }
+} */
+
+
+//Question 18
+
+/* import java.util.Scanner;
+
+class TempConverse{
+  public static void main(String args[]){
+
+   Scanner scanner = new Scanner(System.in);
+
+   System.out.print("Enter temperature in Celsius : ");
+   float temp = scanner.nextInt();
+
+   float conversion = (temp * 9/5) + 32;
+   System.out.println(conversion + "Fahrenheit");
+
+  }
+} */
+
+
+//Question 19
+
+/* import java.util.Scanner;
+class ExpoNums{
+  public static void main(String args[]){
+
+   Scanner scanner = new Scanner(System.in);
+
+   System.out.print("enter base number : ");
+   int base = scanner.nextInt();
+
+   System.out.print("enter exponent number : ");
+   int exponent = scanner.nextInt();
+
+   //double result = Math.pow(base, exponent);
+   int intResult = (int) Math.pow(base, exponent);
+   System.out.println(intResult);
+ }
+} */
+
+
+//Question 20
+
+import java.util.Scanner;
+class DigitCounter{
+  public static void main(String args[]){
+
+   Scanner scanner = new Scanner(System.in);
+
+   System.out.print("enter a number : ");
+   long num = scanner.nextLong();
+
+   int count = 0;
+   long temp = num;
+
+   while (temp != 0){
+      temp /= 10;   //it will remove last digit
+      count++;
+   }
+   System.out.println("The number " + num + " has " + count + " digits.");
+ }
+}
