@@ -631,3 +631,180 @@ System.out.println("This is the default case");
         }
     }
 } */
+
+
+//-----------------------------------Section 2---------------------------------
+
+// Q1.
+
+/* class GradeLoop{
+ public static void main(String args[]){
+    int score = 78;
+
+    if (score >= 90 ) {
+    System.out.println("Grade: A");
+} else if (score >= 80 && score <= 89) {
+    System.out.println("Grade: B");
+} else if (score >= 70 && score <= 79) {
+    System.out.println("Grade: C");
+} else if (score >= 60 && score <= 69) {
+    System.out.println("Grade: D");
+} else {
+    System.out.println("Grade: F (Fail)");
+}
+  
+ }
+} */
+
+
+
+//Q2.
+
+/* class SwitchDays{
+   public static void main(String args[]){
+
+    String day = "Friday";
+
+    switch (day){
+
+     case "Monday" :
+     System.out.print("Monday, Weekday!");
+       break;
+     case "Tuesday" :
+     System.out.print("Tuesday, Weekday!");
+       break;
+     case "Wednesday" :
+     System.out.print("Wednesday, Weekday!");
+       break;
+     case "Thursday" :
+     System.out.print("Thursday, Weekday!");
+       break;
+     case "Friday" :
+     System.out.print("Friday, Weekday!");
+       break;
+     case "Saturday" :
+     System.out.print("Saturday, Weekend!");
+       break;
+     case "Sunday" :
+     System.out.print("Sunday, Weekend!");
+       break;
+     default:
+               System.out.print("Invalid day!");
+    }
+  }
+
+} */
+
+
+
+//Q3.
+
+/* import java.util.Scanner;
+class Calculate{
+   public static void main(String args[]){
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter first num : ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Enter operator (+, -, *, /)  : ");
+        char operator = scanner.next().charAt(0);
+
+        System.out.print("Enter second num: ");
+        double num2 = scanner.nextDouble();
+
+        double result = 0;
+        switch (operator) {
+        
+        case '+' : result = num1 + num2;
+        break;
+
+        case '-' : result = num1 - num2;
+        break;
+
+        case '*' : result = num1 * num2;
+        break;
+
+        case '/' : 
+              if(num2 != 0)
+                  result = num1 / num2;
+               else
+                System.out.println("Error: Division by zero.");
+               return;
+       default:
+           System.out.println("Invalid operator");
+      }
+      
+        System.out.println("Result: " + result);
+        scanner.close();
+  }
+
+} */
+
+
+
+//Q4.
+
+/*import java.util.Scanner;
+
+class Discount{
+ public static void main(String args[]){
+
+   Scanner scanner = new Scanner(System.in);
+
+  System.out.print("Enter your total amount : ");
+  double amount = scanner.nextDouble();
+
+  scanner.nextLine();
+
+ if (amount >= 1000) {
+            System.out.println("Congratulations! You have received 20% off.");
+        } else if (amount >= 500 && amount <= 999) {
+            System.out.println("Congratulations! You have received 10% off.");
+        } else if (amount < 500) {
+            System.out.println("Congratulations! You have received 5% off.");
+        } else {
+            System.out.println("No Discount.");
+        }
+   System.out.println("Do you have a membership? (yes/no) : ");
+   String member = scanner.nextLine();
+   
+   if (member.equalsIgnoreCase("yes")){
+      System.out.print("Congratulations you have recieved extra 5% off on membership ");
+    }else if (member.equalsIgnoreCase("no")) {
+      System.out.print("no extra discount for non members");
+    } else {
+      System.out.print("Please enter 'yes' or 'no'. ");
+    }
+      scanner.close(); 
+  }
+} */
+
+
+
+//Q5.
+
+class Result{
+   public static void main(String[] args){
+
+   int math = 50;
+   int eng = 30;
+   int sci = 35;
+
+   int failCount = 0;
+
+   if(math < 40){
+     failCount++;
+   }if(eng < 40){
+     failCount++;
+   }if(sci < 40){
+     failCount++;
+   }if(failCount == 0){
+     System.out.print("Pass");
+   }else {
+     System.out.print("Failed in "+ failCount + " subject(s)");
+   }
+ }
+
+}
